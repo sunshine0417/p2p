@@ -1,0 +1,88 @@
+//页头样式
+@import url('header.less');
+//轮播图
+.elBanner{margin-top: 5px;}
+
+
+//三大特色
+#feature{
+   .row{
+        &>div{
+            background: url("../../../images/feature01.png") no-repeat left center;
+            height: 65px;
+            padding-left: 80px;
+            margin-bottom: 15px;
+           margin-top: 20px;
+        }
+        
+        &>div:nth-of-type(2){
+            background-image: url("../../../images/feature02.png")
+        }
+         
+        &>div:nth-of-type(3){
+            background-image: url("../../../images/feature03.png")
+        }
+
+        h4{margin-top: 0;font-weight: 700}
+        p{
+            color:@colorccc;
+        }
+   }
+}
+
+
+//投资信息
+.panel-default{
+    border: none;
+    margin-top: 35px;
+    box-shadow: none;
+
+    .panel-heading{
+        background: none;
+        border: none;
+        border-bottom: 1px solid #eee;
+        padding: 0;
+        
+
+        h3{
+            color: @colorBlue;
+            margin: 0;
+            border-bottom: 5px solid @colorBlue;
+        }
+
+        a{
+            text-decoration:none;
+        }
+    }
+    //新闻资讯
+    .panel-body{
+        ul{
+            padding: 0;
+            margin: 0;
+        }
+        li{
+            list-style: none;
+            line-height: 35px;
+            border-bottom: 1px dotted #ccc;
+             
+           a{
+               color: #666;
+               &:hover{
+                   color: @colorBlue;
+                   text-decoration: none;
+
+               }
+           } 
+        }
+    }
+}
+     
+//解决小屏的版面错乱问题
+@media all and (max-width:520px){
+    .hideTitle{
+        display: none;
+    }
+}
+
+//页脚
+@import url('footer.less');

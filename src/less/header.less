@@ -1,0 +1,59 @@
+
+//定义全部变量
+@colorWhite:#fff;
+@colorBlue:#00a8ff;
+@colorccc:#ccc;
+
+//顶部导航去除底部的margin
+.navbar{
+    margin-bottom: 0;
+}
+
+//黑色导航样式
+.navbar-inverse{
+    //电话显示
+    .navbar-brand{
+        color:@colorWhite; 
+        font-size: 20px;
+        font-style: italic;
+
+        span{
+            margin-right: 10px;
+        }
+    }
+
+    //右边li字体显示
+    .navbar-nav{
+        &>li{
+             text-align: center;
+            &>a{
+                color: @colorWhite;
+
+                &:hover{
+                    color: @colorBlue;
+                    text-decoration: underline;
+                }
+            }
+        }           
+    }
+
+}
+
+//白色导航样式 
+.navbar-default .navbar-nav>li{
+    text-align: center;
+    &>a{
+     line-height: 38px;
+     font-size: 16px;  
+
+        &:hover{
+            background-color: #efeeee;
+            color: @colorBlue;
+        }
+    }     
+}
+
+//联系客服处理图片
+.tooltip img{
+    width: 100px;
+}

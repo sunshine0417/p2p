@@ -44,7 +44,7 @@
                 <h3 class="panel-title">用户注册</h3>
             </div>
             <div class="panel-body">
-                <form id="regForm" class="form-horizontal">
+                <form id="regForm" class="form-horizontal" method="post">
                 <div class="form-group">
                     <label for="inputEmail3" class="col-sm-3 control-label">账&emsp;&emsp;号：</label>
                     <div class="col-sm-9">
@@ -98,7 +98,7 @@
 
   <!-- 引入自己的js -->
   <script src="./dist/js/p2p.min.js"></script>
-  <script src="./dist/js/resFrom.min.js"></script>
+  <script src="./dist/js/checkFrom.min.js"></script>
 
 </body>
 

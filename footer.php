@@ -1,5 +1,4 @@
- <!-- 页尾 -->
- <footer class="container-fliud">
+<footer class="container-fliud">
     <div class="container">
       <div class="row">
         <div class="col-sm-8 col-xs-12">

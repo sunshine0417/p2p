@@ -1,16 +1,32 @@
-//引入头部样式
-@import url('./header.less');
+// 引入页头样式
+@import url("header.less");
 
-//自己的样式
+//模板自己的样式定义  
+
 .reglogin{
     margin-top: 10px;
 
-    #regForm{
-        width: 50%;
-        margin: 10px auto;
+    form{
+        width: 40%;
+        margin: 20px auto;
     }
 }
 
+//登录成功获取失败的图标的颜色
+#msgShowContent{
+    span{
+        font-size: 22px;
+        font-weight: bold;
+    }
+    
+    .glyphicon-ok{
+        color: green;
+    }
 
-//引入页脚
-@import url('./footer.less');
+    .glyphicon-remove{
+        color: red;
+    }
+}
+
+// 引入页脚
+@import url("footer.less");
